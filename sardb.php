@@ -1,5 +1,5 @@
 <?php
-die();
+//die();
 /**
  *
  * Safe Search and Replace on Database with Serialized Data v2.0.1
