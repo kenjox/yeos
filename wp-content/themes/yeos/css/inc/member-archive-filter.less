@@ -1,0 +1,81 @@
+/* -----------------------------------------
+  Subnav
+----------------------------------------- */
+section#filternavcontainer {
+  padding: 20px 0px;
+
+
+  h1,h2,h3,h4,h5,h6, form, input[type=text] {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .subheader {
+    color:#fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 35px;
+  }
+
+  label {
+    color:#ccc;
+  }
+
+  #s {
+    background: #191919;
+    border: none;
+    .rounded(20px);
+    padding: 0px 20px;
+    font-weight: 300;
+    color:#999;
+
+    width: 0px;
+    opacity: 0;
+
+    .transition;
+    &:focus {
+      opacity: 1;
+      width: 75%;
+    }
+
+    &:before {
+      content: "";
+    }
+  }
+
+  label i {
+    margin-top: 7px;
+  }
+
+
+  #filters {
+    button.btn {
+      background: #191919;
+      border:none;
+      color:#666;
+      text-shadow: none;
+      .box-shadow(none);
+
+      &:focus {
+        outline-color: transparent;
+        outline-style: none;
+      }
+
+      .caret {
+        border-top-color: #444;
+      }
+
+      &:hover {
+        color:#fff;
+        .caret {
+          border-top-color: #666;
+        }
+      }
+    }
+
+
+  }
+
+  .btn {
+  }
+}

@@ -1,0 +1,58 @@
+	/* The Grid ---------------------- */
+	.row { width: 990px !important; margin: 0 auto !important; min-width: 990px !important; }
+	.row .row { width: auto; max-width: none !important; min-width: 990px !important; margin: 0 -15px !important; }
+	.row.collapse .column, .row.collapse .columns { padding: 0 !important; }
+	.row .row { width: auto !important; max-width: none !important; min-width: 0 !important; margin: 0 -15px !important; }
+	.row .row.collapse { margin: 0 !important; }
+	.column, .columns, { float: left !important; min-height: 1px !important; padding: 0 15px !important; position: relative !important; }
+	.column, .columns { float:left !important; }
+	.row-fluid [class*="span"] { float: left !important; min-height: 1px !important; padding: 0 15px !important; position: relative !important; margin-left: 0px !important; }
+	.column.centered, .columns.centered { float: none !important; margin: 0 auto !important; }
+	[class*="column"] + [class*="column"]:last-child { float: right !important; }
+	[class*="column"] + [class*="column"]:last-child { float:right !important; }
+	[class*="column"] + [class*="column"].end { float: left !important; }
+	.one, .row .one, .span1 { width: 8.33333% !important; }
+	.two, .row .two, .span2 { width: 16.66667% !important; }
+	.three, .row .three, .span3 { width: 25% !important; }
+	.four, .row .four, .span4 { width: 33.33333% !important; }
+	.five, .row .five, .span5 { width: 41.66667% !important; }
+	.six, .row .six, .span6 { width: 50% !important; }
+	.seven, .row .seven, .span7 { width: 58.33333% !important; }
+	.eight, .row .eight, .span8 { width: 66.66667% !important; }
+	.nine, .row .nine, .span9 { width: 75% !important; }
+	.ten, .row .ten, .span10 { width: 83.33333% !important; }
+	.eleven, .row .eleven, .span11 { width: 91.66667% !important; }
+	.twelve, .row .twelve, .span12 { width: 100% !important; }
+	.row .offset-by-one { margin-left: 8.33333% !important; }
+	.row .offset-by-two { margin-left: 16.66667% !important; }
+	.row .offset-by-three { margin-left: 25% !important; }
+	.row .offset-by-four { margin-left: 33.33333% !important; }
+	.row .offset-by-five { margin-left: 41.66667% !important; }
+	.row .offset-by-six { margin-left: 50% !important; }
+	.row .offset-by-seven { margin-left: 58.33333% !important; }
+	.row .offset-by-eight { margin-left: 66.66667% !important; }
+	.row .offset-by-nine { margin-left: 75% !important; }
+	.row .offset-by-ten { margin-left: 83.33333% !important; }
+	.push-two { left: 16.66667% !important; }
+	.pull-two { right: 16.66667% !important; }
+	.push-three { left: 25% !important; }
+	.pull-three { right: 25% !important; }
+	.push-four { left: 33.33333% !important; }
+	.pull-four { right: 33.33333% !important; }
+	.push-five { left: 41.66667% !important; }
+	.pull-five { right: 41.66667% !important; }
+	.push-six { left: 50% !important; }
+	.pull-six { right: 50% !important; }
+	.push-seven { left: 58.33333% !important; }
+	.pull-seven { right: 58.33333% !important; }
+	.push-eight { left: 66.66667% !important; }
+	.pull-eight { right: 66.66667% !important; }
+	.push-nine { left: 75% !important; }
+	.pull-nine { right: 75% !important; }
+	.push-ten { left: 83.33333% !important; }
+	.pull-ten { right: 83.33333% !important; }
+	
+	
+	body .top-bar {
+		max-width: none !important;
+	}

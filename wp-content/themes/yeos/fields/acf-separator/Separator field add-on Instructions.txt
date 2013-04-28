@@ -1,0 +1,36 @@
+Separator Field - ACF Add-on
+by Sam Cohen samjco@gmail.com @samcohennet
+
+Instructions:
+2 ways you can add the Separator Field.
+
+
+
+How to add in your template folder:
+______________________________________
+
+After unzipping, copy the the "acf-custom-fields" folder and it's contents to your template folder (e.g:  twenty-twelve).
+Next register the Separator field in your functions.php file that is in your templates folder by adding the following:
+
+//**************************** Separator Field Add-on to ACG **********************************
+
+if( function_exists( 'register_field' ) )
+{
+    register_field('Separator_field', dirname(__File__) . '/acf-custom-fields/separator.php');
+}
+
+//********************************************************************************************
+
+
+How to add to the ACF Plugin itself:
+______________________________________
+After Unzipping the contents, open the "acf-custom-fields" folder and copy/paste the file "separator.php" into the ACF plugin directory located: wp-contents > plugins > advanced-custom-fields > core > fields
+
+Next edit the the "acf.php" file in the ACF plugin root directory (wp-contents > plugins > advanced-custom-fields > acf.php).
+
+Add this on line 166: include_once('core/fields/separator.php');
+and 
+Add this on line 186: $return['separator'] = new acf_Separator($this);
+
+Next deactivate and reactivate the ACF plugin and You're done!!
+

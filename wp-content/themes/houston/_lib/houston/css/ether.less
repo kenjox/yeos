@@ -1,0 +1,106 @@
+@widgetBorderColor: #e2e2e2;
+@widgetBackgroundColor: #fff;
+@widgetActiveColor: #fff;
+@widgetInctiveColor: #f1f1f1;
+
+/* -----------------------------------------
+   Tabs & Accordion Shared
+----------------------------------------- */
+html body .ether-widget.ether-multi {
+	.ether-content {
+	    padding: 15px;
+	    border: 1px solid @widgetBorderColor;
+
+	    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		
+		> :first-child { margin-top: 0px; }
+	}
+}
+
+/* -----------------------------------------
+   Tabs
+----------------------------------------- */
+html body .ether-widget.ether-type-tabs {
+	
+	/*The tabs*/
+	.ether-ctrl-tabs-1 {
+		border-bottom: 1px solid @widgetBorderColor;
+	
+		.ether-toggle-button {
+			border-color: @widgetBorderColor;
+			border-bottom: none;
+			border-left:none;
+				&:first-child { border-left:1px solid @widgetBorderColor; }
+			background: @widgetInctiveColor;
+			margin-right: 0px;
+			padding: 10px 15px;
+			
+			&:hover {
+				background: lighten(@widgetInctiveColor,3%);
+			}
+			
+			&.ether-current {
+				border-bottom: 1px solid @widgetBackgroundColor;
+				margin-bottom: -1px;
+				background: @widgetActiveColor;
+			}
+		
+		
+		}
+	}
+	
+	.ether-content {
+		border-top: none;
+		> :first-child { margin-top: 0px; }
+	}
+	
+}
+
+/* -----------------------------------------
+   Accordion
+----------------------------------------- */
+html body .ether-type-acc {
+	.ether-toggle-button {
+			border-color: @widgetBorderColor;
+			background: @widgetActiveColor;
+			padding: 10px 15px;
+			
+			&:hover {
+				background: lighten(@widgetInctiveColor,3%);
+			}
+			
+			&.ether-current {
+				border-bottom: 1px solid @widgetBackgroundColor;
+				margin-bottom: -1px;
+				background: @widgetActiveColor;
+			}
+	}
+}
+/* -----------------------------------------
+   Messageboxes
+----------------------------------------- */
+html body .ether-widget {
+
+	&.ether-msg { display: block; padding: 6px 7px; color: #555; font-weight: bold; font-size: 13px; background: #eee; border: 1px solid rgba(0,0,0,0.1); margin-bottom: 12px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; text-shadow: 0 1px rgba(255,255,255,0.9); position: relative; }
+	&.ether-msg-download { background-color: #7fae00; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+	&.ether-msg-warning { background-color: #f68b01; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+	&.ether-msg-error { background-color: #c00000; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+	
+	p {
+		margin: 0px;
+	}
+	
+	.ctrl-close {
+		cursor: pointer;
+	}
+
+	.ether-msg-icon {
+		display: none;
+	}
+}
+
+/* -----------------------------------------
+   Testemonials
+----------------------------------------- */

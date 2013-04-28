@@ -1,0 +1,2 @@
+<link rel="apple-touch-icon" href="<?php bloginfo("template_url"); ?>/images/mobile/touch-icon-small.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo("template_url"); ?>/images/mobile/touch-icon-big.png" />

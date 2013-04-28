@@ -1,0 +1,72 @@
+/* -----------------------------------------
+  Member navigation
+----------------------------------------- */
+@import "inc/member-archive-filter.less";
+
+/* -----------------------------------------
+  Member
+----------------------------------------- */
+.member-block {
+  margin-bottom: 30px;
+
+  .wrapper {
+    .box-shadow(3px 3px 0px rgba(0, 0, 0, 0.2));
+    position: relative;
+  }
+
+  .img {
+
+  }
+
+  img {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+  }
+  .name {
+    margin: 0px;
+    padding: 10px;
+    font-size: 13px;
+
+    background: #000;
+    color:#fff;
+    text-transform: uppercase;
+
+  }
+
+  .title {
+    background: #151515;
+    font-size: 10px;
+    font-weight: normal;
+    color:#666;
+    text-transform: none;
+  }
+
+  .floater {
+    position: absolute;
+    top:10px;
+    left:10px;
+  }
+
+  .overlay {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    color:#ccc;
+    text-shadow: 1px 1px 1px #000;
+
+    display: none;
+
+    p {
+      padding: 20px;
+
+    }
+
+    strong {
+      color:#fff;
+    }
+  }
+}

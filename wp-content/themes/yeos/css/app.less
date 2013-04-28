@@ -1,0 +1,246 @@
+@import "../fonts/neutra/stylesheet.css";
+@import "../fonts/neutrabook/stylesheet.css";
+@import "../lib/houston/css/animate.less";
+@import "../lib/houston/css/elements.less";
+@import "../lib/houston/css/wordpress.less";
+
+
+/* -----------------------------------------
+   Variabler
+----------------------------------------- */
+@linkcolor: #00c0f7;
+@headercolor: #fff;
+@textcolor: #eee;
+
+
+/* -----------------------------------------
+   Typograpghy
+----------------------------------------- */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	-webkit-backface-visibility: hidden;
+}
+
+h1,h2,h3 {
+  font-family: 'NeutraText-Bold';
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+
+}
+.neutra {
+  font-family: 'NeutraText-Bold';
+  font-weight: normal;
+}
+.neutrabook {
+  font-family: 'NeutraText-Book';
+  font-weight: normal;
+}
+.subheader {
+  .neutrabook;
+}
+
+h1,h2,h3,h4,h5,h5 {
+	color: @headercolor;
+    margin:0px 0px 20px 0px;
+	a {
+		color: @headercolor;
+		&:hover { color:darken(@headercolor,10%); }
+	}
+}
+
+a {
+	color: @linkcolor;
+	&:hover { color:darken(@linkcolor,10%); text-decoration: none;}
+}
+
+table { width: 100%; }
+
+
+/* -----------------------------------------
+   Grid config
+----------------------------------------- */
+.row {
+
+}
+
+
+/* -----------------------------------------
+   Basic Layout elements
+----------------------------------------- */
+body { background:#000; color:@textcolor; }
+body > header { background: #292929  }
+body.home > section#main { background: #292929; }
+body > section#main { background: #292929; }
+body > footer { background-color:transparent; }
+body > section#navcontainer {background: #111;}
+body > section#filternavcontainer {background: #242424; }
+
+/* -----------------------------------------
+   Header
+----------------------------------------- */
+body > header {
+	.row {}
+}
+
+
+/*Navigation*/
+body .navbar {
+	margin-bottom: 0px;
+}
+
+/* -----------------------------------------
+   Main Area
+----------------------------------------- */
+body > section#main {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+
+/* -----------------------------------------
+  Home
+----------------------------------------- */
+#dashboard {
+  position: relative;
+}
+#userwall {
+  .row {
+    margin:0px;
+  }
+  .member {
+    box-sizing: border-box;
+    width: 25%;
+    margin:0px;
+    padding:0px;
+  }
+}
+
+#welcome {
+  background: rgba(42,42,42,0.9);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+
+
+  border-top: 1px solid 	rgba(255,255,255,0.15);
+  border-bottom: 1px solid 	rgba(255,255,255,0.05);
+  -webkit-box-shadow: 0 -3px 10px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 -3px 10px rgba(0,0,0,0.4);
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.4);
+
+
+
+  z-index: 5;
+
+  .row {
+    height: 150px;
+
+    h1,h2,h3,h4,h5,h6 {
+      color:#fff;
+
+      a {
+        color:#fff;
+      }
+    }
+
+
+    #logo {
+      padding-top: 30px;
+    }
+    #description {
+      padding-top: 20px;
+
+      .subheader {
+        .neutrabook;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 0px;
+        padding: 0px;
+        padding-top:5px;
+      }
+    }
+  }
+}
+
+#signin {
+  position: absolute;
+  z-index: 5;
+  top:40px;
+
+  .btn {
+
+  }
+}
+/* ------- Featured ------- */
+
+
+
+
+
+section#membernavcontainer {
+  padding: 20px 0px;
+
+  h1,h2,h3,h4,h5 {
+    strong {
+      color:#fff;
+    }
+
+    &.subheader {
+      .neutrabook;
+      text-transform: none;
+      font-size: 23px;
+      letter-spacing: 0px;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}
+
+
+/* -----------------------------------------
+  Member archive
+----------------------------------------- */
+@import "inc/member-archive.less";
+
+
+/* -----------------------------------------
+  Page
+----------------------------------------- */
+#sidebar {
+  ul.nav ul {
+    list-style-type: none;
+    margin-left:15px;
+  }
+
+  form {
+    margin:0px;
+  }
+}
+
+
+
+/* -----------------------------------------
+  Single Member
+----------------------------------------- */
+@import "inc/member-single.less";
+
+
+/* -----------------------------------------
+  Footer
+----------------------------------------- */
+body > footer {
+  .container { padding-top: 30px; padding-bottom: 30px; }
+  h1,h2,h3,h4,h5 { color: #fff; }
+  p { color: #666; }
+  a {
+    color:#fff;
+    &:hover {}
+  }
+}

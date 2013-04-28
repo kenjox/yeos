@@ -1,0 +1,182 @@
+.author {
+/* -----------------------------------------
+  Single Member
+----------------------------------------- */
+.description p:first-child {
+  .neutrabook;
+  font-size: 25px;
+  color:#999;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: -1px;
+
+  strong {
+    color:#fff;
+  }
+}
+
+.description i {
+  font-size: 60px;
+  color:#444;
+}
+
+.extra {
+  margin-top: 20px;
+}
+
+table.darks {
+  .drop-shadow;
+  background: #191919;
+  border-color: #333;
+
+  th, tfoot td {
+    background: #000;
+    color:#fff;
+  }
+
+  tbody tr:nth-child(even) {
+    background: #141414;
+  }
+
+
+  tbody tr td {
+    color:#444;
+  }
+}
+
+#presentation {
+  position: relative;
+  overflow: hidden;
+  .inner-shadow();
+
+  img.bg {
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 1;
+  }
+
+  div.pattern {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 2;
+    background: url(../images/pattern.png);
+
+  }
+
+  .user-info {
+    position: relative;
+    z-index: 3;
+
+    text-align: center;
+    padding-top:40px;
+    padding-bottom:40px;
+  }
+
+  .profile_wrapper {
+    .rounded(999px);
+    .box-shadow(0px 0px 5px #000);
+    border:10px solid rgba(255,255,255,0.8);
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  img.profile {
+    .rounded(999px);
+  }
+
+  h1 {
+    font-size: 45px;
+    .neutra();
+    text-transform: uppercase;
+    line-height: 0.5;
+    text-shadow: 0px 2px 0px #000;
+  }
+
+  h4 {
+    font-size: 16px;
+    text-shadow: 0px 2px 0px #000;
+    margin: 0px 0px 10px;
+  }
+  .location {
+    font-size: 16px;
+    text-shadow: 0px 2px 0px #000;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+
+
+#tabs {
+  margin-bottom: 0px;
+  border-bottom:none;
+
+  margin-top:-50px;
+  position:relative;
+  z-index:10;
+
+  ul {
+    margin: 0px;
+    border:none;
+  }
+
+  li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 20px 13px;
+    border:none;
+    &:hover {
+      border:none;
+      background: #292929;
+      background-color: rgba(0,0,0,0.3);
+    }
+  }
+
+
+  li.active a {
+    .gradient(#292929,#292929,#313131);
+    background: #292929;
+    color:#fff;
+    border-right: none;
+    border-left: none;
+    border-top:2px solid rgb(15,190,180);
+  }
+}
+
+/* ------- Sidebar ------- */
+
+
+#formrow {
+  input[type="text"], input[type="password"] {
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    color:
+      #bbb;
+    text-shadow: 1px 1px 1px
+    #000;
+    background:
+      rgba(0, 0, 0, 0.16);
+    border: 0;
+    border: 4px solid #262626;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+  }
+  label {
+    color:#fff;
+  }
+  .ginput_complex label {
+    color:#666;
+  }
+}
+
+/*----------------------------------------- */
+}

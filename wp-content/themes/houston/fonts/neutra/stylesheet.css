@@ -1,0 +1,11 @@
+
+@font-face {
+  font-family: 'NeutraText-Bold';
+  src: url('NeutraText-Bold.eot'); /* IE9 Compat Modes */
+  src: url('NeutraText-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('NeutraText-Bold.woff') format('woff'), /* Modern Browsers */
+       url('NeutraText-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('NeutraText-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
