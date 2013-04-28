@@ -1,5 +1,4 @@
 .DS_STORE
 wp-config.php
 .idea/*
-wp-content/uploads/*
 wp-content/themes/houston/*
