@@ -1,4 +1,7 @@
 <?php
+
+$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+var_dump($url);die();
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
  * wp-blog-header.php which does and tells WordPress to load the theme.
