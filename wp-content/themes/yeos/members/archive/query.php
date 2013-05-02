@@ -1,42 +1,49 @@
 <?php
+$mq_args = array();
 if(is_tax('memberfields_area')) {
-    $args = array(
-        'meta_query' => array(
-            array(
+    $mq_args[] = array(
                 'key' => 'geo_areas',
                 'value' => get_queried_object_id(),
                 'compare' => 'LIKE'
-            )
-        )
     );
-} elseif(is_tax('memberfields_expertise')) {
-    $args = array(
-        'meta_query' => array(
-            array(
+}
+if(is_tax('memberfields_expertise')) {
+    $mq_args[] = array(
                 'key' => 'expertises',
                 'value' => get_query_var('memberfields_expertise'),
                 'compare' => 'LIKE'
-            )
-        )
-    );
-} else {
-    $args = array(
-        'number'
     );
 }
 
 if(isset($_GET['search'])) {
-    $args = array(
-        'relation' => 'AND',
-        'meta_query' => array(
-            array(
+    $mq_args[] = array(
                 'key' => 'nickname',
                 'value' => $_GET['search'],
                 'compare' => 'LIKE'
-            ), $args['meta_query'][0]
-        )
     );
 }
+
+
+if(isset($_GET['area'])) {
+    $mq_args[] = array(
+        'key' => 'geo_areas',
+        'value' => $_GET['area'],
+        'compare' => 'LIKE'
+    );
+}
+
+if(isset($_GET['expertise'])) {
+    $mq_args[] = array(
+        'key' => 'expertises',
+        'value' => $_GET['expertise'],
+        'compare' => 'LIKE'
+    );
+}
+
+$args= array(
+    'relation' => 'AND',
+    'meta_query' => $mq_args
+);
 
 global $wp_query;
 $user_query = new WP_User_Query( $args );

@@ -1,3 +1,4 @@
 .DS_STORE
 .idea/*
+local-config.php
 wp-content/themes/houston/*

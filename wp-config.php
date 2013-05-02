@@ -17,6 +17,10 @@
  */
 
 // ** MySQL-inst�llningar - MySQL-uppgifter f�r du fr�n ditt webbhotell ** //
+if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
+    include( dirname( __FILE__ ) . '/local-config.php' );
+    define( 'WP_LOCAL_DEV', true ); // We'll talk about this later
+} else {
 /** Namnet p� databasen du vill anv�nda f�r WordPress */
 define('DB_NAME', 'heroku_07fc25a20773df2');
 
@@ -28,6 +32,9 @@ define('DB_PASSWORD', '97581e56');
 
 /** MySQL-server */
 define('DB_HOST', 'us-cdbr-east-03.cleardb.com');
+}
+
+
 
 /** Teckenkodning f�r tabellerna i databasen. */
 define('DB_CHARSET', 'utf8');

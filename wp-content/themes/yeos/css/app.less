@@ -78,6 +78,7 @@ body > footer { background-color:transparent; }
 body > section#navcontainer {background: #111;}
 body > section#filternavcontainer {background: #242424; }
 
+
 /* -----------------------------------------
    Header
 ----------------------------------------- */
@@ -116,6 +117,9 @@ body > section#main {
     width: 25%;
     margin:0px;
     padding:0px;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -157,7 +161,7 @@ body > section#main {
 
       .subheader {
         .neutrabook;
-        letter-spacing: -1px;
+        letter-spacing:0px;
         text-transform: uppercase;
         font-size: 20px;
         line-height: 1.5;
@@ -243,4 +247,115 @@ body > footer {
     color:#fff;
     &:hover {}
   }
+}
+
+
+
+.modal {
+  padding: 0;
+  .rounded(7px);
+
+  border: 10px solid rgba(0,0,0,0.3);
+
+  overflow: hidden;
+
+  .modal-header {
+    background: darken(#f1f6f9,10%);
+    margin: 0px;
+  }
+
+
+  form {
+    margin: 0px 20px;
+  }
+
+
+  .modal-header {
+    padding: 15px 0px;
+    border-bottom:1px solid #fff;
+    background: #333;
+    margin:0px;
+
+    h4 {
+      font-family: 'Gotham-Black';
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: normal;
+      color:#fff;
+
+      margin: 0px;
+
+      .icon {
+        color:#7eafcd;
+      }
+    }
+  }
+
+  .modal-body {
+    border-top:1px solid #dde0e7;
+    border-bottom:1px solid #dde0e7;
+    margin-bottom: 0px;
+    padding: 20px 0px;
+    padding-bottom: 15px;
+
+    em {
+      padding: 5px 0px;
+      display: block;
+    }
+
+    .error-wrapper {
+      background: #fad3d3;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border:1px solid #eab8b8;
+      color:#cd7e7e;
+    }
+
+  }
+
+  label {
+    color:#333;
+    font-weight: 300;
+    padding-bottom: 5px;
+  }
+
+  .login-remember {margin: 0px;}
+  .login-remember label {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .login-submit {
+    display: none;
+  }
+
+
+  input[type=text], input[type=password] {
+    border:1px solid #d5d9da;
+    -webkit-box-shadow: 0px 0px 0px 4px #f1f6f9;
+    box-shadow: 0px 0px 0px 4px #f1f6f9;
+    width:95%;
+
+    &:focus {
+      border-color: #b6d5ea;
+    }
+  }
+
+  .modal-footer {
+    border-top:1px solid #fff;
+    background: #f1f6f9;
+    margin-bottom: 0px;
+    padding: 15px 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    .button {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.modal-backdrop, .modal-backdrop.fade.in {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
 }

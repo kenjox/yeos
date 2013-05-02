@@ -82,7 +82,7 @@
                 <div class="btn-group pull-right">
                     <?php
                     if ( !is_user_logged_in() ) {
-                        echo '<a class="btn btn-primary btn-success" href="#" data-reveal-id="loginModal"><i class="icon-user icon-white"></i> '.__("Logga in").'</a>';
+                        echo '<a class="btn btn-primary btn-success" href="#loginModal"  data-toggle="modal"><i class="icon-user icon-white"></i> '.__("Logga in").'</a>';
                     } else {
                         echo '<a class="btn btn-primary btn-warning" href="'.self_admin_url('profile.php').'"><i class="icon-user icon-white"></i> '.__("Redigera").'</a>';
                         echo '<a class="btn btn-primary btn-inverse" href="'.wp_logout_url(home_url()).'"><i class="icon-off icon-white"></i> '.__("Logga ut").'</a>';

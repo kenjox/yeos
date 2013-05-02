@@ -146,3 +146,17 @@ function expertis_profile_update( $user_id, $old_user_data ) {
     }
     }
 }
+
+
+
+if (!function_exists('disableAdminBar')) {
+
+    function disableAdminBar(){
+
+            remove_action( 'admin_footer', 'wp_admin_bar_render', 1000 );
+    }
+
+}
+
+add_filter('admin_head','remove_admin_bar_style_backend');
+
