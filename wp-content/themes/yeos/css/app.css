@@ -3702,7 +3702,7 @@ body > section#main {
   font-weight: normal;
   letter-spacing: 0px;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.5;
   margin: 0px;
   padding: 0px;
@@ -3914,6 +3914,19 @@ section#filternavcontainer #filters button.btn:hover .caret {
 }
 .author .extra {
   margin-top: 20px;
+}
+.author #user-table {
+  border-color: #333;
+}
+.author #user-table * {
+  border-color: #333;
+}
+.author #user-table tbody td {
+  color: #666;
+}
+.author #user-table tbody td:first-child {
+  font-weight: bold;
+  color: #fff;
 }
 .author table.darks {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);

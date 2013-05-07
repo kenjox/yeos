@@ -43,10 +43,9 @@ $user_data = array(
 <section id="tabs">
     <div class="container">
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-            <li><a href="#profile" data-toggle="tab">Profile</a></li>
-            <li><a href="#messages" data-toggle="tab">Messages</a></li>
-            <li><a href="#settings" data-toggle="tab">Settings</a></li>
+            <li class="active"><a href="#home" data-toggle="tab">Profil</a></li>
+            <li><a href="#profile" data-toggle="tab">Annat</a></li>
+            <li><a href="#messages" data-toggle="tab">Skicka meddelande</a></li>
         </ul>
     </div>
 </section>
@@ -70,7 +69,6 @@ $user_data = array(
                 <?php echo do_shortcode('[gravityform id="1"]'); ?>
                 </div>
             </div>
-            <div class="tab-pane" id="settings">4...</div>
         </div>
 
 

@@ -147,8 +147,6 @@ function expertis_profile_update( $user_id, $old_user_data ) {
     }
 }
 
-
-
 if (!function_exists('disableAdminBar')) {
 
     function disableAdminBar(){
