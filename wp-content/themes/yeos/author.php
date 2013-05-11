@@ -10,6 +10,8 @@ $user_data = array(
     "link" => get_author_posts_url($user->ID),
     "profile_picture" => $pictures[0]['profile_picture'],
     "profile_picture_ia" => $pictures[0]['profile_picture_ia'],
+    "phone" => get_field('telephone', 'user_'.$user->ID),
+    "hide_phone" => get_field('hide_telephone', 'user_'.$user->ID),
     "first_name" => $usermeta['first_name'][0],
     "last_name" => $usermeta['last_name'][0],
     "work_title" => $usermeta['work_title'][0],
@@ -17,7 +19,9 @@ $user_data = array(
     "profile_description" => $usermeta['profile_description'][0],
     "speaker_public" => $usermeta['speaker_public'][0],
     "social_media" => get_field('social_media', 'user_'.$user->ID),
-    "areas" => get_field('geo_areas', 'user_'.$user->ID)
+    "website" => get_field('website', 'user_'.$user->ID),
+    "areas" => get_field('geo_areas', 'user_'.$user->ID),
+    "expertises" => get_field('expertises', 'user_'.$user->ID)
 );
 ?>
 

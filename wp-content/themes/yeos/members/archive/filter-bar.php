@@ -29,7 +29,7 @@
             </div>
 
             <div class="btn-group">
-                <button class="btn" data-toggle="dropdown">Kunskaper
+                <button class="btn" data-toggle="dropdown">Expertisområde
                     <span class="caret"></span>
                 </button>
 
